@@ -1,0 +1,10 @@
+CREATE TABLE `sap-sales-contract-partner-data`
+(
+  `SalesContract`           varchar(10) DEFAULT NULL,
+  `PartnerFunction`         varchar(2) DEFAULT NULL,
+  `Customer`                varchar(10) DEFAULT NULL,
+  `Supplier`                varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`SalesContract`),
+  CONSTRAINT `SalesContract_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap-sales-contract-header-data` (`SalesContract`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4;
