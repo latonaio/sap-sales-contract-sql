@@ -24,7 +24,7 @@ CREATE TABLE `sap-sales-contract-pricing-element-data`
   `ConditionScaleBasisUnit`       varchar(3) DEFAULT NULL,
   `ConditionScaleBasisCurrency`   varchar(5) DEFAULT NULL,
   `ConditionIsManuallyChanged`    tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`SalesContract`, `SalesContractItem`),
+  PRIMARY KEY (`SalesContract`, `SalesContractItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
   CONSTRAINT `SalesContract_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap-sales-contract-header-data` (`SalesContract`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
