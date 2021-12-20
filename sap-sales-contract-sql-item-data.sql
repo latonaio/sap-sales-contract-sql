@@ -35,7 +35,7 @@ CREATE TABLE `sap-sales-contract-item-data`
   `SalesContractValidityStartDate` date DEFAULT NULL,
   `SalesContractValidityEndDate` date DEFAULT NULL,
   `SalesContractSignedDate`     date DEFAULT NULL,
-  PRIMARY KEY (`SalesContract`, `SalesContractItem`)
+  PRIMARY KEY (`SalesContract`, `SalesContractItem`),
   CONSTRAINT `SalesContract_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap-sales-contract-header-data` (`SalesContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;
