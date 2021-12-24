@@ -1,6 +1,6 @@
 CREATE TABLE `sap-sales-contract-header-data`
 (
-  `SalesContract`                   varchar(10) DEFAULT NULL,
+  `SalesContract`                   varchar(10) NOT NULL,
   `SalesContractType`               varchar(4) DEFAULT NULL,
   `SalesOrganization`               varchar(4) DEFAULT NULL,
   `DistributionChannel`             varchar(2) DEFAULT NULL,
