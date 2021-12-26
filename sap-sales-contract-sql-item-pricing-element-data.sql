@@ -1,11 +1,11 @@
-CREATE TABLE `sap-sales-contract-pricing-element-data`
+CREATE TABLE `sap_sales_contract_item_pricing_element_data`
 (
   `SalesContract`                 varchar(10) NOT NULL,
   `SalesContractItem`             varchar(6) NOT NULL,
   `PricingProcedureStep`          varchar(3) NOT NULL,
   `PricingProcedureCounter`       varchar(3) NOT NULL,
   `ConditionType`                 varchar(4) DEFAULT NULL,
-  `PricingDateTime`               datetime DEFAULT NULL,
+  `PricingDateTime`               varchar(80) DEFAULT NULL,
   `ConditionCalculationType`      varchar(3) DEFAULT NULL,
   `ConditionBaseValue`            varchar(13) DEFAULT NULL,
   `ConditionRateValue`            varchar(13) DEFAULT NULL,
@@ -25,6 +25,6 @@ CREATE TABLE `sap-sales-contract-pricing-element-data`
   `ConditionScaleBasisCurrency`   varchar(5) DEFAULT NULL,
   `ConditionIsManuallyChanged`    tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`SalesContract`, `SalesContractItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
-  CONSTRAINT `SalesContract_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap-sales-contract-header-data` (`SalesContract`)
+  CONSTRAINT `SAPSalesContractItemPricingElement_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap_sales_contract_header_data` (`SalesContract`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

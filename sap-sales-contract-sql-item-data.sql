@@ -1,4 +1,4 @@
-CREATE TABLE `sap-sales-contract-item-data`
+CREATE TABLE `sap_sales_contract_item_data`
 (
   `SalesContract`               varchar(10) NOT NULL,
   `SalesContractItem`           varchar(6) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `sap-sales-contract-item-data`
   `PurchaseOrderByCustomer`     varchar(35) DEFAULT NULL,
   `Material`                    varchar(40) DEFAULT NULL,
   `MaterialByCustomer`          varchar(35) DEFAULT NULL,
-  `PricingDate`                 date DEFAULT NULL,
+  `PricingDate`                 varchar(80) DEFAULT NULL,
   `RequestedQuantity`           varchar(17) DEFAULT NULL,
   `RequestedQuantityUnit`       varchar(3) DEFAULT NULL,
   `ItemGrossWeight`             varchar(17) DEFAULT NULL,
@@ -32,10 +32,10 @@ CREATE TABLE `sap-sales-contract-item-data`
   `ReferenceSDDocument`         varchar(10) DEFAULT NULL,
   `ReferenceSDDocumentItem`     varchar(6) DEFAULT NULL,
   `SDProcessStatus`             varchar(1) DEFAULT NULL,
-  `SalesContractValidityStartDate` date DEFAULT NULL,
-  `SalesContractValidityEndDate` date DEFAULT NULL,
-  `SalesContractSignedDate`     date DEFAULT NULL,
+  `SalesContractValidityStartDate` varchar(80) DEFAULT NULL,
+  `SalesContractValidityEndDate` varchar(80) DEFAULT NULL,
+  `SalesContractSignedDate`     varchar(80) DEFAULT NULL,
   PRIMARY KEY (`SalesContract`, `SalesContractItem`),
-  CONSTRAINT `SalesContract_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap-sales-contract-header-data` (`SalesContract`)
+  CONSTRAINT `SAPSalesContractItemData_fk` FOREIGN KEY (`SalesContract`) REFERENCES `sap_sales_contract_header_data` (`SalesContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;
