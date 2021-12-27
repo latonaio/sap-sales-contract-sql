@@ -1,4 +1,4 @@
-CREATE TABLE `sap_sales_contract_partner_data`
+CREATE TABLE `sap_sales_contract_header_partner_data`
 (
   `SalesContract`           varchar(10) NOT NULL,
   `PartnerFunction`         varchar(2) NOT NULL,

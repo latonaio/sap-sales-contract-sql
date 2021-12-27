@@ -14,11 +14,10 @@ https://api.sap.com/api/OP_API_SALES_CONTRACT_SRV_0001/overview
 sap-sales-contract-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
 * sap-sales-contract-sql-header-data.sql（SAP 販売基本契約 - ヘッダデータ）  
+* sap-sales-contract-sql-header-partner-data.sql（SAP 販売基本契約 - ヘッダ取引先データ） 
 * sap-sales-contract-sql-item-data.sql（SAP 販売基本契約 - 明細データ）  
-* sap-sales-contract-sql-partner-data.sql（SAP 販売基本契約 - 取引先データ） 
-* sap-sales-contract-sql-pricing-element-data.sql（SAP 販売基本契約 - 価格条件データ）  
+* sap-sales-contract-sql-item-pricing-element-data.sql（SAP 販売基本契約 - 明細価格条件データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
-
