@@ -17,7 +17,7 @@ CREATE TABLE `sap_sales_contract_item_pricing_element_data`
   `ConditionRecord`               varchar(10) DEFAULT NULL,
   `ConditionSequentialNumber`     varchar(3) DEFAULT NULL,
   `TaxCode`                       varchar(2) DEFAULT NULL,
-  `ConditionAmount`               varchar(13) DEFAULT NULL,
+  `ConditionAmount`               varchar(25) DEFAULT NULL,
   `TransactionCurrency`           varchar(5) DEFAULT NULL,
   `PricingScaleBasis`             varchar(3) DEFAULT NULL,
   `ConditionScaleBasisValue`      varchar(25) DEFAULT NULL,
