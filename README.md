@@ -1,6 +1,6 @@
 # sap-sales-contract-sql    
 
-sap-sales-contract-sql は、主にエッジアプリケーションにおいて、SAPと連携された販売基本契約データを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-sales-contract-sql は、主にエッジアプリケーションにおいて、SAPと連携された販売契約データを保存するSQLテーブルを作成するためのレポジトリです。  
 sap-sales-contract-sql は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
@@ -13,10 +13,10 @@ https://api.sap.com/api/OP_API_SALES_CONTRACT_SRV_0001/overview
 
 sap-sales-contract-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* sap-sales-contract-sql-header-data.sql（SAP 販売基本契約 - ヘッダデータ）  
-* sap-sales-contract-sql-header-partner-data.sql（SAP 販売基本契約 - ヘッダ取引先データ） 
-* sap-sales-contract-sql-item-data.sql（SAP 販売基本契約 - 明細データ）  
-* sap-sales-contract-sql-item-pricing-element-data.sql（SAP 販売基本契約 - 明細価格条件データ）  
+* sap-sales-contract-sql-header-data.sql（SAP 販売契約 - ヘッダデータ）  
+* sap-sales-contract-sql-header-partner-data.sql（SAP 販売契約 - ヘッダ取引先データ） 
+* sap-sales-contract-sql-item-data.sql（SAP 販売契約 - 明細データ）  
+* sap-sales-contract-sql-item-pricing-element-data.sql（SAP 販売契約 - 明細価格条件データ）  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
